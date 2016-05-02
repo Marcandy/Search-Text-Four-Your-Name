@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search Text For Your Name</title>
+</head>
+
+<body>
+<script>var text="Marc Marc Marc Marus morbr mbarb  majfkf Marci marco";
+var myName= "Marc";
+var hits= [];
+
+for (i = 0; i < text.length; i++)
+{
+    if (text[i] === myName[0])
+    {
+        for(var j = i; j < (i + myName.length); j++)
+        {
+            hits.push(text[j]);
+        }    
+    }
+}
+if (hits.length === 0)
+{console.log("Your name wasn't found!")}
+else
+{console.log(hits)}
+</script>
+</body>
+
+</html>

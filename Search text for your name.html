@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<script>var text= "Marc Marc Marc Marus morbr mbarb Marc majfkf Marci marco";
+var myName= "Marc";
+var hits= [];
+
+for (var i=0; i<text.length; i++) {
+    if (text[i]==="M") {
+        for(var j=i; j<(i+ myName.length); j++) {
+            if (j === myName.substring(myName.length)) {
+                hits.push(text[j]);
+            }
+        }
+    }
+}
+
+if (hits.length===0) {
+    console.log("Your name wasn't found!");
+}
+else {
+    console.log(hits);
+}</script> 
+	</body>
+</html>
